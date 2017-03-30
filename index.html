@@ -2,26 +2,46 @@
 <html>
 <head>
 	<title>My Site | oconnortransition.github.io</title>
-	<style type="text/css">
-		html, body {
-			background-color: #eee;
-		}
-
-		h1 {
-			color: #ff5270;
-			font-size: 48px;
-			text-align: center;
-		}
-
-		.container {
-			margin: 0 auto;
-			width: 980px;
-		}
-	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta property="og:title" content="It's a Pugs Life"/>
+	<meta property="og:image" content="http://www.publicdomainpictures.net/pictures/50000/velka/dog-1374296753ZPQ.jpg"/>
+	<meta property="og:site_name" content="It's a Pugs Life"/>
+	<meta property="og:description" content="Discover my pet pug"/>
 </head>
 <body>
 	<div class="container">
-		<h1>oconnortransition.github.io</h1>
+		<header class="row">
+			<img src="img/logo.png" width="100" alt="My Logo" class="img-responsive pull-left">
+			<h1 class="pull-left">It's A Pug's Life</h1>	
+		</header>
+		<div class="content">
+			<div class="row">
+				<div class="col col-md-3">
+					<h2>Meet Chubbs</h2>
+					<p>My pet likes to do the following:</p>
+					<ul>
+						<li>Eat</li>
+						<li>Sleep</li>
+						<li>Chase cars</li>
+						<li>Bite me</li>
+					</ul>
+				</div>
+				<div class="col col-md-9">
+					<img src="http://www.publicdomainpictures.net/pictures/50000/velka/dog-1374296753ZPQ.jpg" class="img-responsive" alt="My Pug">
+				</div>
+				<button id="button">Click me</button>
+			</div>
+			
+		</div>		
+		<footer class="pull-right">It's a Pugs Life &copy; 2017</footer>
 	</div>
+	<script type="text/javascript">
+		$('#button').click(function() {
+			alert(1);
+		});
+	</script>
 </body>
 </html>
